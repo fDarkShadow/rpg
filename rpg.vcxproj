@@ -149,12 +149,40 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="include\capacity\charge.hpp" />
     <ClCompile Include="src\rpg.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\capacity\stun.hpp" />
-    <ClInclude Include="include\capacity\virtual.hpp" />
+    <ClInclude Include="include\rpg\capacities\charge.hpp" />
+    <ClInclude Include="include\rpg\capacities\helpers\capacity_name.hpp" />
+    <ClInclude Include="include\rpg\capacities\stun.hpp" />
+    <ClInclude Include="include\rpg\capacities\visitor.hpp" />
+    <ClInclude Include="include\rpg\capacities\visitors\apply.hpp" />
+    <ClInclude Include="include\rpg\capacities\visitors\capacity_name.hpp" />
+    <ClInclude Include="include\rpg\capacity.hpp" />
+    <ClInclude Include="include\rpg\character.hpp" />
+    <ClInclude Include="include\rpg\characters\details\crtp.hpp" />
+    <ClInclude Include="include\rpg\characters\helpers\class_name.hpp" />
+    <ClInclude Include="include\rpg\characters\knight.hpp" />
+    <ClInclude Include="include\rpg\characters\orc.hpp" />
+    <ClInclude Include="include\rpg\characters\visitor.hpp" />
+    <ClInclude Include="include\rpg\characters\visitors\class_name.hpp" />
+    <ClInclude Include="include\rpg\core\game.hpp" />
+    <ClInclude Include="include\rpg\dice\roller.hpp" />
+    <ClInclude Include="include\rpg\display\console.hpp" />
+    <ClInclude Include="include\rpg\protection.hpp" />
+    <ClInclude Include="include\rpg\protections\details\crtp.hpp" />
+    <ClInclude Include="include\rpg\protections\helpers\protection_name.hpp" />
+    <ClInclude Include="include\rpg\protections\shield.hpp" />
+    <ClInclude Include="include\rpg\protections\visitor.hpp" />
+    <ClInclude Include="include\rpg\protections\visitors\protection_name.hpp" />
+    <ClInclude Include="include\rpg\visitor\visitable.hpp" />
+    <ClInclude Include="include\rpg\visitor\visitable_impl.hpp" />
+    <ClInclude Include="include\rpg\weapon.hpp" />
+    <ClInclude Include="include\rpg\weapons\axe.hpp" />
+    <ClInclude Include="include\rpg\weapons\blade.hpp" />
+    <ClInclude Include="include\rpg\weapons\helpers\weapon_name.hpp" />
+    <ClInclude Include="include\rpg\weapons\visitor.hpp" />
+    <ClInclude Include="include\rpg\weapons\visitors\weapon_name.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
